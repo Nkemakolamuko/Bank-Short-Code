@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Study</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // Welcome the user
+        let name = prompt("Enter your name");
+        alert(`Good Morning ${name}, and Welcome to Vin Bank!!
+        Enter to continue!`);
+
+        //What user would love to do 
+        let action = +prompt(`What would you love to do today?
+        Please enter just number: 
+        1. Transfer
+        2. Buy Airtime
+        3. Buy Data
+        4. Access Loan
+        5. Self Service
+        6. Make Enquiry`);
+
+        // Handling Selected Options
+        if(action == 1) {
+            +prompt(`Select Bank
+            1. Access
+            2. UBA
+            3. First Bank
+            4. Zenith
+            4. Other Banks`);
+
+         let amount = +prompt(`Enter Amount:`);
+         alert(`You have Successfully sent N${amount}
+         Have a lovely day!!`);
+        } else if(action == 2) {
+            +prompt(`Select Network
+            1. MTN
+            2. GLO
+            3. AIRTEL
+            4. 9MOBILE
+            5. Other Networks`);
+
+            let airtimeNumber = +prompt(`Enter number`);
+
+            let airtimeAmount = +prompt(`Enter Amount`);
+
+            alert(`You have successfully recharged 0${airtimeNumber}
+            Have a lovely day!!`);
+        } else if(action == 3) {
+            +prompt(`Select Data Network
+            1. MTN
+            2. GLO
+            3. AIRTEL
+            4. 9MOBILE`);
+
+            let airtimeNumber = +prompt(`Enter number`);
+
+            let airtimeAmount = +prompt(`Enter Data Amount`);
+
+            alert(`You have successfully subbed 0${airtimeNumber}
+            Have a lovely day!!`);
+
+        } else if(action == 4) {
+            alert(`Sorry ${name}!!
+            You're not eligible yet.
+            Try again tomorrow!`);
+
+        } else if(action == 5) {
+            let enquiry = prompt(`Enter your your detailed enquiry below:`);
+            alert(`Your enquiry ...
+            ${enquiry}
+            Will be attended to within 24 hours, thank you for your patience!`);
+
+        } else if(action == 6) {
+            alert(`This service is currently unavailable, check your network and try again!!`);
+
+        } else {
+            alert(`Select a valid option!!`);
+        }
+
+
+    </script>
+</body>
+</html>
